@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "@types/jquery": "^3.5.14",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "jquery": "^3.6.0",
+    "parcel": "^2.6.2",
+    "parcel-bundler": "^1.5.1",
+    "typescript": "^4.7.4"
+  },
+  "scripts": {
+    "build-client": "parcel build client/index.html --public-url ./ --out-dir ./client/dist",
+    "start-client": "parcel client/index.html --out-dir ./client/dist",
+    "build-api": "tsc --project ./api/tsconfig.json",
+    "start-api": "tsc --project ./api/tsconfig.json && node api/dist/index.js"
+  }
+}
