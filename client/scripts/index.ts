@@ -8,5 +8,30 @@ $(document).ready(() => {
                 }
             })
     })
+
+    $("#recipe-btn").on('click', () => {
+        $.ajax('http://localhost:8081/getRecipes',
+            {
+                success: (res: any []) => {
+                    let recipehtml = ""
+                    res.forEach((recipe)=>{
+                        let r = `
+                        <div class='recipe'>
+                            <div class='title'>
+                            ${recipe.name}
+                            </div>
+                            <div class='des'>
+                            ${recipe.description}
+                            </div>
+                        </div>
+                        `
+                        recipehtml += r
+                    })
+                    $('#recipes-container').html(recipehtml)
+                }
+            })
+    })
+
+
 }
 )

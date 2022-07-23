@@ -1,0 +1,9 @@
+.recipe{
+    max-width: 200px;
+    border-bottom: 1px solid rgb(58, 58, 58);
+    padding-bottom: 7px;
+    margin-bottom: 7px;
+}
+.title{
+    font-weight: bold;
+}
