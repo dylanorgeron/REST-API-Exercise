@@ -11,8 +11,8 @@
     "typescript": "^4.7.4"
   },
   "scripts": {
-    "build-client": "parcel build client/index.html --public-url ./ --out-dir ./client/dist",
-    "start-client": "parcel client/index.html --out-dir ./client/dist",
+    "build-client": "parcel build client/*.html --public-url ./ --out-dir ./client/dist",
+    "start-client": "parcel client/*.html --out-dir ./client/dist",
     "build-api": "tsc --project ./api/tsconfig.json",
     "start-api": "tsc --project ./api/tsconfig.json && node api/dist/index.js"
   }

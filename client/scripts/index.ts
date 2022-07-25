@@ -18,7 +18,7 @@ $(document).ready(() => {
                         let r = `
                         <div class='recipe'>
                             <div class='title'>
-                            ${recipe.name}
+                            <a href='recipe.html?id=${recipe.id}'>${recipe.name}</a>
                             </div>
                             <div class='des'>
                             ${recipe.description}
